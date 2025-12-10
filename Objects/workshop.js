@@ -40,3 +40,56 @@ let getAverageRating = (ratingsArray) =>{
 }
 
 console.log(getAverageRating(recipe1.ratings))
+
+const getTotalIngredients  = ingredients => ingredients.length
+
+function getDifficultyLevel(cookingTime) {
+  if (cookingTime <= 30) {
+    return 'easy';
+  } else if (cookingTime <= 60) {
+    return 'medium';
+  } else {
+    return 'hard';
+  }
+}
+
+const recipe1AverageRating = getAverageRating(recipe1.ratings);
+console.log(recipe1AverageRating);
+
+const recipe1TotalIngredients = getTotalIngredients(recipe1.ingredients);
+console.log(recipe1TotalIngredients);
+
+const recipe1DifficultyLevel = getDifficultyLevel(recipe1.cookingTime);
+console.log(recipe1DifficultyLevel);
+
+recipe1.averageRating = recipe1AverageRating
+recipe1.totalIngredients = recipe1TotalIngredients
+recipe1.difficultyLevel = recipe1DifficultyLevel
+
+const recipe2AverageRating = getAverageRating(recipe2.ratings);
+console.log(recipe2AverageRating);
+
+const recipe2TotalIngredients = getTotalIngredients(recipe2.ingredients);
+console.log(recipe2TotalIngredients);
+
+const recipe2DifficultyLevel = getDifficultyLevel(recipe2.cookingTime);
+console.log(recipe2DifficultyLevel);
+
+recipe2.averageRating = getAverageRating(recipe2.ratings);
+recipe2.totalIngredients = getTotalIngredients(recipe2.ingredients)
+recipe2.difficultyLevel = getDifficultyLevel(recipe2.cookingTime)
+
+const recipe3AverageRating = getAverageRating(recipe3.ratings);
+console.log(recipe3AverageRating);
+
+const recipe3TotalIngredients = getTotalIngredients(recipe3.ingredients);
+console.log(recipe3TotalIngredients);
+
+const recipe3DifficultyLevel = getDifficultyLevel(recipe3.cookingTime);
+console.log(recipe3DifficultyLevel);
+
+recipe3.averageRating = getAverageRating(recipe3.ratings);
+recipe3.totalIngredients = getTotalIngredients(recipe3.ingredients)
+recipe3.difficultyLevel = getDifficultyLevel(recipe3.cookingTime)
+
+console.log(recipes)
